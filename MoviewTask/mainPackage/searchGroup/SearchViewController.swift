@@ -47,11 +47,11 @@ class SearchViewController: ParentViewController {
         
         // on click for each item in the tableview
         self.searchTableView.rx.itemSelected.subscribe({ [weak self] indexPath in
-//            self?.endEditing()
             self?.searchTableView.reloadRows(at: [indexPath.element!], with: .none)
             let selectedUser = self?.searchList.value[(indexPath.element?.row)!]
             self?.singlePersonData.tempUserDetails = (userId: selectedUser?.id ?? 0, username: selectedUser?.name ?? "", userImage: "\(profileImageLink)\(selectedUser?.profile_path ?? "")")
             self?.parent?.navigationController?.pushViewController((self?.singlePersonData)!, animated: true)
+            self?.endEditing()
         }).disposed(by: self.disposeBag)
         
         self.searchBarView
@@ -145,7 +145,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource{
             if let cell = tableView.dequeueReusableCell(withIdentifier: loadingReusableCell, for: indexPath) as? LoadingTableViewCell{
                 if !self.loading{
                     self.page = self.page + 1
-//                    self.getPopularListNow(showLoading: false)
                 }
                 cell.startLoading()
                 return cell
