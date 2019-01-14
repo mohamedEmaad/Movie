@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 class DataManagerImp: DataManager {
     
@@ -14,5 +15,9 @@ class DataManagerImp: DataManager {
     
     init(apiHelper: ApiHelper) {
         self.apiHelper = apiHelper
+    }
+    
+    func getPopularPersons(page: Int) -> Observable<PopluarPersonsResponse> {
+        return apiHelper.getPopularPersons(page: page)
     }
 }

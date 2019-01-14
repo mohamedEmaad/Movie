@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol ApiHelper {
-    
+    func getPopularPersons(page: Int) -> Observable<PopluarPersonsResponse>
 }
