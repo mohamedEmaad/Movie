@@ -15,7 +15,6 @@ class PopularPersonsPresenter{
     
     let viewPresneter: PopularPersonViewPresenter!
     let disposeBag: DisposeBag
-    
     private let dataManger: DataManager = (UIApplication.shared.delegate as! AppDelegate).dataManger
     
     init(disposeBag: DisposeBag, viewPresenter: PopularPersonViewPresenter) {
@@ -27,10 +26,10 @@ class PopularPersonsPresenter{
         if showLoading{
             self.viewPresneter.showLoading()
         }
-        self.getPopularPersonsResponse(observable: self.dataManger.getPopularPersons(page: page))
+        self.getPopularPersonsResponse(observable: self.dataManger.getPopularPersons(page: page), page: page)
     }
     
-    func getPopularPersonsResponse(observable: Observable<PopluarPersonsResponse>){
+    func getPopularPersonsResponse(observable: Observable<PopluarPersonsResponse>, page: Int){
         
         observable.asObservable().subscribe(onNext: { (response) in
             self.viewPresneter.hideLoading()
@@ -38,8 +37,8 @@ class PopularPersonsPresenter{
             self.viewPresneter.postPopularPersons(persons: theResponse ?? [Results]())
         }, onError: { (error) in
             self.viewPresneter.hideLoading()
-            
             self.viewPresneter.onFailure(message: "network Error")
+            self.viewPresneter.postPageNumber(page: page > 1 ? page - 1 : 1)
         }).disposed(by: self.disposeBag)
         
     }

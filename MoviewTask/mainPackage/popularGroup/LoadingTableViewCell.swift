@@ -10,6 +10,7 @@ import UIKit
 
 class LoadingTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +20,10 @@ class LoadingTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func startLoading(){
+        self.loading.startAnimating()
     }
 
 }

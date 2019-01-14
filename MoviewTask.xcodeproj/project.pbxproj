@@ -18,6 +18,14 @@
 		F92B5F0321ECD50F0080CEF5 /* SomeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F0221ECD50F0080CEF5 /* SomeExtensions.swift */; };
 		F92B5F0621ECD5A60080CEF5 /* NewBaseFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92B5F0121ECD4EB0080CEF5 /* NewBaseFrameWork.framework */; };
 		F92B5F0721ECD5A60080CEF5 /* NewBaseFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F92B5F0121ECD4EB0080CEF5 /* NewBaseFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F92B5F0B21ECDCBE0080CEF5 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F0A21ECDCBE0080CEF5 /* LoadingTableViewCell.swift */; };
+		F92B5F0E21ECE4CE0080CEF5 /* SinglePersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F0D21ECE4CE0080CEF5 /* SinglePersonViewController.swift */; };
+		F92B5F1021ECE4DA0080CEF5 /* SinglePersonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F0F21ECE4DA0080CEF5 /* SinglePersonDetails.swift */; };
+		F92B5F1221ECEA990080CEF5 /* SinglePersonPreseneter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F1121ECEA990080CEF5 /* SinglePersonPreseneter.swift */; };
+		F92B5F1421ECEAB70080CEF5 /* SinglePersonViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F1321ECEAB70080CEF5 /* SinglePersonViewPresenter.swift */; };
+		F92B5F1621ECFBD30080CEF5 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F1521ECFBD30080CEF5 /* GalleryCollectionViewCell.swift */; };
+		F92B5F1A21ECFFF30080CEF5 /* ImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F1821ECFFF30080CEF5 /* ImagesResponse.swift */; };
+		F92B5F1B21ECFFF30080CEF5 /* Profiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B5F1921ECFFF30080CEF5 /* Profiles.swift */; };
 		F94E60D621EA7A8B0071FC9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94E60D521EA7A8B0071FC9D /* AppDelegate.swift */; };
 		F94E60D821EA7A8B0071FC9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94E60D721EA7A8B0071FC9D /* ViewController.swift */; };
 		F94E60DB21EA7A8B0071FC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94E60D921EA7A8B0071FC9D /* Main.storyboard */; };
@@ -79,6 +87,14 @@
 		F92652A321EBE8B7008A6FA9 /* PopularPersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPersonTableViewCell.swift; sourceTree = "<group>"; };
 		F92B5EFC21ECD4EB0080CEF5 /* NewBaseFrameWork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NewBaseFrameWork.xcodeproj; path = "../../iOS Modules/NewBaseFrameWork/NewBaseFrameWork.xcodeproj"; sourceTree = "<group>"; };
 		F92B5F0221ECD50F0080CEF5 /* SomeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeExtensions.swift; sourceTree = "<group>"; };
+		F92B5F0A21ECDCBE0080CEF5 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		F92B5F0D21ECE4CE0080CEF5 /* SinglePersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePersonViewController.swift; sourceTree = "<group>"; };
+		F92B5F0F21ECE4DA0080CEF5 /* SinglePersonDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePersonDetails.swift; sourceTree = "<group>"; };
+		F92B5F1121ECEA990080CEF5 /* SinglePersonPreseneter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePersonPreseneter.swift; sourceTree = "<group>"; };
+		F92B5F1321ECEAB70080CEF5 /* SinglePersonViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePersonViewPresenter.swift; sourceTree = "<group>"; };
+		F92B5F1521ECFBD30080CEF5 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F92B5F1821ECFFF30080CEF5 /* ImagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesResponse.swift; sourceTree = "<group>"; };
+		F92B5F1921ECFFF30080CEF5 /* Profiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profiles.swift; sourceTree = "<group>"; };
 		F94E60D221EA7A8B0071FC9D /* MoviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94E60D521EA7A8B0071FC9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F94E60D721EA7A8B0071FC9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +162,7 @@
 				F926529F21EBE4D5008A6FA9 /* PopularPersonsPresenter.swift */,
 				F92652A121EBE4F0008A6FA9 /* PopularPersonViewPresenter.swift */,
 				F92652A321EBE8B7008A6FA9 /* PopularPersonTableViewCell.swift */,
+				F92B5F0A21ECDCBE0080CEF5 /* LoadingTableViewCell.swift */,
 			);
 			path = popularGroup;
 			sourceTree = "<group>";
@@ -156,6 +173,28 @@
 				F92B5F0121ECD4EB0080CEF5 /* NewBaseFrameWork.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F92B5F0C21ECE4B50080CEF5 /* singlePersonPackage */ = {
+			isa = PBXGroup;
+			children = (
+				F92B5F1721ECFFE40080CEF5 /* imagesModel */,
+				F92B5F0F21ECE4DA0080CEF5 /* SinglePersonDetails.swift */,
+				F92B5F0D21ECE4CE0080CEF5 /* SinglePersonViewController.swift */,
+				F92B5F1121ECEA990080CEF5 /* SinglePersonPreseneter.swift */,
+				F92B5F1321ECEAB70080CEF5 /* SinglePersonViewPresenter.swift */,
+				F92B5F1521ECFBD30080CEF5 /* GalleryCollectionViewCell.swift */,
+			);
+			path = singlePersonPackage;
+			sourceTree = "<group>";
+		};
+		F92B5F1721ECFFE40080CEF5 /* imagesModel */ = {
+			isa = PBXGroup;
+			children = (
+				F92B5F1821ECFFF30080CEF5 /* ImagesResponse.swift */,
+				F92B5F1921ECFFF30080CEF5 /* Profiles.swift */,
+			);
+			path = imagesModel;
 			sourceTree = "<group>";
 		};
 		F94E60C921EA7A8B0071FC9D = {
@@ -224,6 +263,7 @@
 		F94E60F821EA8A180071FC9D /* mainPackage */ = {
 			isa = PBXGroup;
 			children = (
+				F92B5F0C21ECE4B50080CEF5 /* singlePersonPackage */,
 				F926529C21EBE47C008A6FA9 /* popularGroup */,
 				F926529321EBE0E9008A6FA9 /* searchGroup */,
 				F94E60F921EA8A280071FC9D /* MainViewController.swift */,
@@ -401,21 +441,29 @@
 				F92652A021EBE4D5008A6FA9 /* PopularPersonsPresenter.swift in Sources */,
 				F9A1A5F421EA9E6F00331138 /* PopluarPersonsResponse.swift in Sources */,
 				F94E60F221EA85A00071FC9D /* ApiHelper.swift in Sources */,
+				F92B5F1021ECE4DA0080CEF5 /* SinglePersonDetails.swift in Sources */,
 				F926529921EBE3F4008A6FA9 /* SearchPresenter.swift in Sources */,
 				F9A1A5F321EA9E6F00331138 /* Known_for.swift in Sources */,
 				F94E60D821EA7A8B0071FC9D /* ViewController.swift in Sources */,
 				F92B5F0321ECD50F0080CEF5 /* SomeExtensions.swift in Sources */,
 				F94E60F421EA85AF0071FC9D /* ApiHelperImp.swift in Sources */,
 				F94E60ED21EA853B0071FC9D /* DataManager.swift in Sources */,
+				F92B5F1A21ECFFF30080CEF5 /* ImagesResponse.swift in Sources */,
+				F92B5F1621ECFBD30080CEF5 /* GalleryCollectionViewCell.swift in Sources */,
+				F92B5F1421ECEAB70080CEF5 /* SinglePersonViewPresenter.swift in Sources */,
 				F92652A421EBE8B7008A6FA9 /* PopularPersonTableViewCell.swift in Sources */,
 				F94E60EF21EA85530071FC9D /* DataManagerImp.swift in Sources */,
+				F92B5F1221ECEA990080CEF5 /* SinglePersonPreseneter.swift in Sources */,
 				F94E60D621EA7A8B0071FC9D /* AppDelegate.swift in Sources */,
 				F926529521EBE100008A6FA9 /* SearchViewController.swift in Sources */,
 				F9A1A5F221EA9E6F00331138 /* Results.swift in Sources */,
 				F926529E21EBE496008A6FA9 /* PoplarPersonsViewController.swift in Sources */,
 				F94E60FA21EA8A280071FC9D /* MainViewController.swift in Sources */,
+				F92B5F0B21ECDCBE0080CEF5 /* LoadingTableViewCell.swift in Sources */,
 				F926529B21EBE415008A6FA9 /* SearchViewPresenter.swift in Sources */,
 				F94E60DE21EA7A8B0071FC9D /* MoviewTask.xcdatamodeld in Sources */,
+				F92B5F1B21ECFFF30080CEF5 /* Profiles.swift in Sources */,
+				F92B5F0E21ECE4CE0080CEF5 /* SinglePersonViewController.swift in Sources */,
 				F94E60F721EA87F80071FC9D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

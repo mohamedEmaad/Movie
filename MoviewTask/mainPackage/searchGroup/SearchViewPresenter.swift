@@ -10,5 +10,7 @@ import Foundation
 import NewBaseFrameWork
 
 protocol SearchViewPresenter: StatusClass {
-    
+    func postSearchData(persons: [Results])
+    func postEmptyData()
+    func postPageNum(page: Int)
 }

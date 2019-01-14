@@ -31,7 +31,7 @@ class PopularPersonTableViewCell: UITableViewCell {
         bind the views with person data
      */
     func setupViewWithPersonData(person: Results){
-        self.personImageView.loadImageUrl(imageUrl: "https://image.tmdb.org/t/p/w500/\(person.profile_path ?? "")", placeholder: #imageLiteral(resourceName: "userAvatar"))
+        self.personImageView.loadImageUrl(imageUrl: "\(profileImageLink)\(person.profile_path ?? "")", placeholder: #imageLiteral(resourceName: "userAvatar"))
         self.personNameLabel.text = person.name ?? ""
         self.knowFor.text = (person.known_for?.count ?? 0) > 0 ? (person.known_for?[0].media_type ?? "") : ""
     }

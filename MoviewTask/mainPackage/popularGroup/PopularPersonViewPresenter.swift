@@ -11,4 +11,5 @@ import NewBaseFrameWork
 
 protocol PopularPersonViewPresenter: StatusClass {
     func postPopularPersons(persons: [Results])
+    func postPageNumber(page: Int)
 }

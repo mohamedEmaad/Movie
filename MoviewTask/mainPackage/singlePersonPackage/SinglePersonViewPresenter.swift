@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import NewBaseFrameWork
+
+protocol SinglePersonViewPresenter: StatusClass {
+    func postUserData(userDetails: SinglePersonDetails)
+    func postUserImages(profiles: [Profiles])
+}

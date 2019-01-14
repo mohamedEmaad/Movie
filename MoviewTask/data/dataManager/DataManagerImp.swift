@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 class DataManagerImp: DataManager {
-    
+ 
     let apiHelper: ApiHelper
     
     init(apiHelper: ApiHelper) {
@@ -19,5 +19,17 @@ class DataManagerImp: DataManager {
     
     func getPopularPersons(page: Int) -> Observable<PopluarPersonsResponse> {
         return apiHelper.getPopularPersons(page: page)
+    }
+    
+    func getUserDetails(userId: Int) -> Observable<SinglePersonDetails> {
+        return apiHelper.getUserDetails(userId: userId)
+    }
+    
+    func getUserImages(userId: Int) -> Observable<ImagesResponse> {
+        return apiHelper.getUserImages(userId: userId)
+    }
+    
+    func searchForPerson(text: String, page: Int) -> Observable<PopluarPersonsResponse> {
+        return self.apiHelper.searchForPerson(text: text, page: page)
     }
 }
